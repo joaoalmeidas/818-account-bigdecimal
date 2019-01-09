@@ -26,7 +26,7 @@ public class Conta {
 		
 		if(quantidade.compareTo(BigDecimal.valueOf(0.0)) == 1) {
 			
-			saldo.add(quantidade);
+			setSaldo(getSaldo().add(quantidade));
 			
 		}
 		
