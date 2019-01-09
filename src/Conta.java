@@ -9,7 +9,8 @@ public class Conta {
 	public Conta(String nome, BigDecimal saldo) {
 		super();
 		this.nome = nome;
-		if(saldo.doubleValue() > 0.0) {
+		
+		if(saldo.compareTo(BigDecimal.valueOf(0.0)) == 1) {
 			
 			this.saldo = saldo;
 			
@@ -17,6 +18,15 @@ public class Conta {
 		
 	}
 	
+	public void deposita(BigDecimal quantidade) {
+		
+		if(quantidade.compareTo(BigDecimal.valueOf(0.0)) == 1) {
+			
+			saldo.add(quantidade);
+			
+		}
+		
+	}
 	
 	
 	
