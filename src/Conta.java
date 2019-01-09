@@ -14,6 +14,10 @@ public class Conta {
 			
 			this.saldo = saldo;
 			
+		}else {
+			
+			this.saldo = BigDecimal.valueOf(0.0);
+			
 		}
 		
 	}
